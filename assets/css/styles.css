@@ -174,7 +174,6 @@ table caption {
 
 .home-content {
   position: relative;
-  /* top: -8rem; */
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
@@ -206,7 +205,7 @@ table caption {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .full-height {
@@ -417,12 +416,15 @@ div.full-width {
     padding: 0.5rem;
     cursor: pointer;
   }
-/* × */
   .close-menu:checked~.menu {
     display: block;
   }
 
   .close-menu:checked~.close-menu-label::after {
     content: '×';
+  }
+
+  h2{
+    font-size: 4rem;
   }
 }
